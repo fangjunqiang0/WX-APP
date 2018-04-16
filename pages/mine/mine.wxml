@@ -1,0 +1,5 @@
+<!--pages/mine/mine.wxml-->
+<text>pages/mine/mine.wxml</text>
+<view class='view1'>
+  <label >mine</label>
+</view>

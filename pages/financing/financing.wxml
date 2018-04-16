@@ -1,0 +1,5 @@
+<!--pages/financing/financing.wxml-->
+<text>pages/financing/financing.wxml</text>
+<view>
+  <label>financing</label>
+</view>

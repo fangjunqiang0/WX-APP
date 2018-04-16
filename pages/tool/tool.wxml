@@ -1,0 +1,5 @@
+<!--pages/tool/tool.wxml-->
+<text>pages/tool/tool.wxml</text>
+<view>
+  <label>tool</label>
+</view>
