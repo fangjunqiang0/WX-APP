@@ -20,19 +20,27 @@
     "list": [
       {
         "pagePath": "pages/home/home",
-        "text": "首页"
+        "text": "首页",
+        "iconPath": "",
+        "selectedIconPath": ""
       },
       {
         "pagePath": "pages/financing/financing",
-        "text": "融资"
+        "text": "融资",
+        "iconPath": "",
+        "selectedIconPath": ""
       },
       {
         "pagePath": "pages/tool/tool",
-        "text": "工具"
+        "text": "工具",
+        "iconPath": "",
+        "selectedIconPath": ""
       },
       {
         "pagePath": "pages/mine/mine",
-        "text": "我的"
+        "text": "我的",
+        "iconPath": "",
+        "selectedIconPath": ""
       }
     ]
   },

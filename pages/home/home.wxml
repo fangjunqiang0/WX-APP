@@ -2,4 +2,9 @@
 <text>pages/home/home.wxml</text>
 <view>
   <label>home</label>
+  <button>button</button>
+  <text>text</text>
+  <input value='input'>input</input>
+  <form>form</form>
+  
 </view>
