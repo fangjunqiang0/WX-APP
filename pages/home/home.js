@@ -1,18 +1,38 @@
 // pages/home/home.js
+
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    message: 'Hello World',
+    id: 0,
+    condition: true,
+    flag: 0,
+    a: 1,
+    b: 2,
+    c: 3,
+    d: 4,
+    length: 3,
+    zero: 0,
+    msgItem: {
+      index: 1,
+      msg: 'this is template',
+      time: '2018-1-1'
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('onloas')
+    console.log('onload')
+    this.data.message = 'hello fangjunqiang'
+    // this.setData({
+    //   message: this.data.message
+    // })
   },
 
   /**

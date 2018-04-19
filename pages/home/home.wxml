@@ -1,10 +1,51 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
-<view>
-  <label>home</label>
-  <button>button</button>
-  <text>text</text>
-  <input value='input'>input</input>
-  <form>form</form>
-  
+<!-- 数据绑定  -->
+<view>内容{{message}}</view>
+<view id="item-{{id}}">组件属性（需要在双引号之内）</view>
+<view wx:if="{{condition}}">控制属性（需要在双引号之内）</view>
+<checkbox checked="{{true}}">关键字（需要在双引号之内）</checkbox>
+
+<view hidden="{{flag ? true : false}}"> 三运运算 </view>
+<view>算数运算{{a+b}} + {{c}} + d</view> 
+<view wx:if="{{lengh > 5}}">逻辑判断</view>
+<view>字符串运算{{"say:" + message}}</view>
+<view wx:for="{{[zero,1,2,3,4]}}" wx:key="key">数组{{item}}</view>
+
+<!--  <template is="objectCombine" data="{{for: a, bar: b}}"></template> 
+<template is="objectCombine" data="{{...obj1, ...obj2, e: 5}}"></template> -->
+
+<!-- 注意： 花括号和引号之间如果有空格，将最终被解析成为字符串 -->
+<view wx:for="{{[1,2,3]}} " wx:key="key">
+  {{item}}
 </view>
+
+<!-- 条件渲染 -->
+<view wx:if="{{condition}}">true</view>
+
+<view wx:if="{{length > 5}}">1</view>
+<view wx:elif="{{length > 2}}">2</view>
+<view wx:else>3</view>
+
+<!-- block wx:if -->
+<block wx:if="{{true}}">
+  <view>view1</view>
+  <view>view2</view>
+</block>
+
+<!-- 模块 -->
+<template name="msgItem">
+  <view>{{index}}:{{msg}}</view>
+  <view>Time: {{time}}</view>
+</template>
+
+<template is="msgItem" data="{{...msgItem}}"></template>
+
+<template name="name1">
+  <view>this is name1</view>
+</template>
+<template name="name2">
+  <view>this is name2</view>
+</template>
+
+<block wx:for="{{[1,2,3,4]}}" wx:key="key">
+  <template is="{{item % 2 != 0 ? 'name1' : 'name2'}}"></template>
+</block>
