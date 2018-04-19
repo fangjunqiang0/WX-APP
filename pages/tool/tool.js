@@ -5,13 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    message: 'nihao'
   },
 
+  tapName: function(e) {
+    console.log(e)
+  },
+
+  handleOuter: function(e) {
+    console.log('handle Outer')
+  },
+
+  handleMiddle: function (e) {
+    console.log('handleMiddle')
+  },
+
+  handleInner: function (e) {
+    console.log('handleInner')
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.data.message = 'hell;';
   
   },
 
@@ -63,4 +79,4 @@ Page({
   onShareAppMessage: function () {
   
   }
-})
+});

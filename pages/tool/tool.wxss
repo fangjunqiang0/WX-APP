@@ -1,1 +1,26 @@
 /* pages/tool/tool.wxss */
+#taptext {
+  background: #eee;
+  height: 50px;
+  text-align: center; 
+  margin: 10px;
+  line-height: 50px;
+}
+
+#outer {
+  background: #eee;
+  height: 150px;
+  margin: 10px;
+  text-align: center;
+}
+#middle {
+  background: #ddd;
+  margin: 25px;
+  text-align: center;
+
+}
+#inner {
+  background: #ccc;
+  margin: 25px;
+  text-align: center;
+}
