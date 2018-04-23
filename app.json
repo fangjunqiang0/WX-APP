@@ -1,12 +1,23 @@
 {
   "pages": [
-    "pages/tool/tool",
     "pages/home/home",
+    "pages/tool/tool",
     "pages/financing/financing",
-    
     "pages/mine/mine",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/home/bindData/bindData",
+    "pages/home/condition/condition",
+    "pages/home/quote/quote",
+    "pages/home/list/list",
+    "pages/home/template/template",
+    "pages/home/event/event",
+    "pages/home/templateWXS/templateWXS",
+    "pages/home/baseLibrary/baseLibrary",
+    "pages/home/dataType/dataType",
+    "pages/home/note/note",
+    "pages/home/operator/operator",
+    "pages/home/sentence/sentence",
+    "pages/home/variable/variable"
   ],
   "window": {
     "backgroundTextStyle": "light",

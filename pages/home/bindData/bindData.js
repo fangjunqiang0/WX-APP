@@ -1,21 +1,21 @@
-// pages/tool/tool.js
+// pages/home/bindData/bindData.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
- 
-    
+    message: 'Hello World',
+    a: 1,
+    b: 2,
+    c: 3
   },
 
- 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.data.message = 'hell;';
-  
+    
   },
 
   /**
@@ -66,4 +66,4 @@ Page({
   onShareAppMessage: function () {
   
   }
-});
+})

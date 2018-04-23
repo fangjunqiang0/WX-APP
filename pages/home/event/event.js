@@ -1,20 +1,38 @@
-// pages/tool/tool.js
+// pages/home/event/event.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
- 
-    
+  
   },
 
- 
+  tapName: function (e) {
+    console.log(e)
+    console.log(e.target.id)
+  },
+
+  handleTap1: function (e) {
+    console.log('handleTap1')
+  },
+
+  handleTap2: function (e) {
+    console.log('handleTap2')
+  },
+
+  handleTap3: function (e) {
+    console.log('handleTap3')
+  },
+
+  handleTap4: function (e) {
+    console.log('handleTap4')
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.data.message = 'hell;';
   
   },
 
@@ -66,4 +84,4 @@ Page({
   onShareAppMessage: function () {
   
   }
-});
+})

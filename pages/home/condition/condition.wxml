@@ -1,0 +1,13 @@
+<!--pages/home/condition/condition.wxml-->
+<!-- 条件渲染 -->
+<view wx:if="{{condition}}">true</view>
+
+<view wx:if="{{length > 5}}">1</view>
+<view wx:elif="{{length > 2}}">2</view>
+<view wx:else>3</view> 
+
+<!-- block wx:if -->
+ <block wx:if="{{true}}">
+  <view>view1</view>
+  <view>view2</view>
+</block> 

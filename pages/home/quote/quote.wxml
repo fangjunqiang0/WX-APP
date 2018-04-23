@@ -1,0 +1,10 @@
+<!--pages/home/quote/quote.wxml-->
+<!-- 引用 -->
+<!-- import可以在该文件中使用目标文件定义的template -->
+<import src="testItem.wxml"/>
+<template is="testItem" data="{{array: arr}}"/>
+
+<!-- include 可以将目标文件除了 <template/> <wxs/> 外的整个代码引入，相当于是拷贝到 include 位置 -->
+<include src="header.wxml"/>
+<view>body</view>
+<include src="footer.wxml"/>

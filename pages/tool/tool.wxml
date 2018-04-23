@@ -1,17 +1,2 @@
-<!--pages/tool/tool.wxml-->
-<!-- 事件 -->
 
-<view id='taptext' data-hi='Wechat' bindtap='tapName'>Clicked me !</view>
 
-<!-- 事件绑定和冒泡 -->
-<!-- bind事件绑定不会阻止冒泡事件向上冒泡，catch事件绑定可以阻止冒泡事件向上冒泡。 -->
-
-<view id='outer' bindtap='handleOuter'>
-  outer view 
-  <view id='middle' catchtap='handleMiddle'>
-    middle view 
-    <view id='inner' bindtap='handleInner'>
-      inner view 
-    </view>
-  </view>
-</view>

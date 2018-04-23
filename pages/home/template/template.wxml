@@ -1,0 +1,21 @@
+<!--pages/home/template/template.wxml-->
+
+
+<!-- 模块 -->
+ <template name="msgItem">
+  <view>{{index}}:{{msg}}</view>
+  <view>Time: {{time}}</view>
+</template>
+
+<template is="msgItem" data="{{...msgItem}}"></template>
+
+<template name="name1">
+  <view>this is name1</view>
+</template>
+<template name="name2">
+  <view>this is name2</view>
+</template>
+
+<block wx:for="{{[1,2,3,4]}}" wx:key="key">
+  <template is="{{item % 2 != 0 ? 'name1' : 'name2'}}"></template>
+</block> 

@@ -1,0 +1,3 @@
+<template name="testItem" >
+  <text wx:for="{{array}}">{{item}}</text>
+</template>

@@ -7,34 +7,138 @@ Page({
    * 页面的初始数据
    */
   data: {
-    message: 'Hello World',
-    id: 0,
-    condition: true,
-    flag: 0,
-    a: 1,
-    b: 2,
-    c: 3,
-    d: 4,
-    length: 3,
-    zero: 0,
-    msgItem: {
-      index: 1,
-      msg: 'this is template',
-      time: '2018-1-1'
-    }
+    wxmlHidden: true,
+    wxsHidden: true,
+    wxddHidden: true,
+    componentHidden: true,
+
+    wxmlArr: ['数据绑定', '列表渲染', '条件渲染', '模板', '事件','引用'],
+    wxsArr: ['模块', '变量', '注释', '运算符', '语句', '数据类型', '基础类库'],
+   
+  },
+/**
+ * WXMLBtnClick
+ */
+  wxmlBtnClick(e) {
+    console.log(e)
+    this.data.wxmlHidden = !this.data.wxmlHidden;
+    this.setData({
+      wxmlHidden: this.data.wxmlHidden
+    })
   },
 
+  wxsBtnClick(e) {
+    console.log(e)
+    this.data.wxsHidden = !this.data.wxsHidden;
+    this.setData({
+      wxsHidden: this.data.wxsHidden
+    })
+  },
+
+  wxssBtnClick(e) {
+    console.log(e)
+
+  },
+
+  componentBtnClick(e) {
+    console.log(e)
+  },
+  /** wxml子项点击事件 */
+  wxmlDetailClick(e) {
+    console.log(e)
+    let id = Number(e.currentTarget.id)
+    switch (id) {
+      case 0:
+        wx.navigateTo({
+          url: "./bindData/bindData",
+        })
+        break
+      case 1:
+        wx.navigateTo({
+          url: './list/list',
+        })
+        break
+      case 2:
+        wx.navigateTo({
+          url: './condition/condition',
+        })
+        break
+      case 3:
+        wx.navigateTo({
+          url: './template/template',
+        })
+        break
+      case 4:
+        wx.navigateTo({
+          url: './event/event',
+        })
+        break
+      case 5:
+        wx.navigateTo({
+          url: './quote/quote',
+        })
+        break
+      default:
+        break
+    }
+
+  },
+
+  /** wxs子项点击事件 */
+  wxsDetailClick(e) {
+    console.log(e)
+    let id = Number(e.currentTarget.id)
+    switch (id) {
+      case 0:
+        wx.navigateTo({
+          url: "./templateWXS/templateWXS",
+        })
+        break
+      case 1:
+        wx.navigateTo({
+          url: './variable/variable',
+        })
+        break
+      case 2:
+        wx.navigateTo({
+          url: './note/note',
+        })
+        break
+      case 3:
+        wx.navigateTo({
+          url: './operator/operator',
+        })
+        break
+      case 4:
+        wx.navigateTo({
+          url: './sentence/sentence',
+        })
+        break
+      case 5:
+        wx.navigateTo({
+          url: './dataType/dataType',
+        })
+        break
+      case 6:
+        wx.navigateTo({
+          url: './baseLibrary/baseLibrary',
+        })
+        break
+      default:
+        break
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     console.log('onload');
-    this.data.message = 'hello fangjunqiang';
+    // this.data.message = 'hello fangjunqiang';
 
-    this.data.message = 'hello message';
-    this.setData({
-      message: this.data.message
-    });
+    // this.data.message = 'hello message';
+    // this.setData({
+    //   message: this.data.message
+    // });
   
   },
 

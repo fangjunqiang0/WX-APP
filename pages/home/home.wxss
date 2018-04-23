@@ -1,1 +1,36 @@
 /* pages/home/home.wxss */
+
+#home_title {
+  height: 50px;
+  background: #fff;
+  text-align: center;
+  line-height: 50px;
+}
+
+
+.wxml_wxs .wxml .wxml_detail {
+  height: 40px;
+  padding-left: 20px;
+  line-height: 40px;
+}
+
+.wxml_wxs .wxs .wxs_detail {
+  height: 40px;
+  padding-left: 20px;
+  line-height: 40px;
+}
+/* .wxml_wxs_switch .wxml_btn {
+  height: 100%;
+  width: 50%;
+  font: 6px;  
+  background: white;
+}
+
+.wxml_wxs_switch .wxs_btn {
+  height: 100%;
+  width: 50%;
+  font: 6px;  
+  background: white;
+  left: 50%;
+} */
+

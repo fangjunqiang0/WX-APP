@@ -1,4 +1,5 @@
-/* pages/tool/tool.wxss */
+/* pages/home/event/event.wxss */
+
 #taptext {
   background: #eee;
   height: 50px;

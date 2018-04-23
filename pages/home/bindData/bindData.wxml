@@ -1,0 +1,18 @@
+<!--pages/home/bindData/bindData.wxml-->
+ <view>内容{{message}}</view>
+<view id="item-{{id}}">组件属性（需要在双引号之内）</view>
+<view wx:if="{{condition}}">控制属性（需要在双引号之内）</view>
+<checkbox checked="{{true}}">关键字（需要在双引号之内）</checkbox> 
+
+ <view hidden="{{flag ? true : false}}"> 三运运算 </view>
+<view>算数运算{{a+b}} + {{c}} + d</view>
+<view wx:if="{{lengh > 5}}">逻辑判断</view>
+<view>字符串运算{{"say:" + message}}</view>
+<view wx:for="{{[zero,1,2,3,4]}}" wx:key="key">数组{{item}}</view> 
+
+
+
+<!-- 注意： 花括号和引号之间如果有空格，将最终被解析成为字符串 -->
+ <view wx:for="{{[1,2,3]}} " wx:key="key">
+  {{item}}
+</view> 
