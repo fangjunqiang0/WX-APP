@@ -4,6 +4,7 @@
     "pages/tool/tool",
     "pages/financing/financing",
     "pages/mine/mine",
+    "pages/more/more",
     "pages/logs/logs",
     "pages/home/bindData/bindData",
     "pages/home/condition/condition",
@@ -32,27 +33,31 @@
     "list": [
       {
         "pagePath": "pages/home/home",
-        "text": "首页",
+        "text": "视图层",
         "iconPath": "",
         "selectedIconPath": ""
       },
       {
         "pagePath": "pages/financing/financing",
-        "text": "融资",
+        "text": "自定义组件",
         "iconPath": "",
         "selectedIconPath": ""
       },
       {
         "pagePath": "pages/tool/tool",
-        "text": "工具",
+        "text": "插件",
         "iconPath": "",
         "selectedIconPath": ""
       },
       {
         "pagePath": "pages/mine/mine",
-        "text": "我的",
+        "text": "逻辑层",
         "iconPath": "",
         "selectedIconPath": ""
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "更多"
       }
     ]
   },
